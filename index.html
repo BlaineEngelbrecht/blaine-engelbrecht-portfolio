@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blaine Engelbrecht — Aspiring IT Professional</title>
+  <meta name="description" content="Portfolio of Blaine Engelbrecht, an IT student focused on software development, database design, and networking, aspiring toward cybersecurity and network engineering.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-mark">Blaine<span>.</span>Engelbrecht</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <img src="assets/profile.jpg" alt="Profile photo of Blaine Engelbrecht" class="hero-photo">
+          <p class="eyebrow-role">Aspiring IT Professional — Networking &amp; Security</p>
+          <h1>Blaine Jordan Engelbrecht</h1>
+          <p class="lede">
+            I'm an IT student with a focus on software development, database design, and networking.
+            I'm currently building my technical foundation through hands-on coursework — from writing
+            Java applications to modelling databases and studying how networks move data across the world.
+            My long-term goal is to run my own cybersecurity or network engineering business; if that path
+            doesn't pan out exactly as planned, I'd be just as happy building a career as a network engineer.
+            Either way, I'm drawn to the security and infrastructure side of IT — the parts that keep systems
+            running and protect the people relying on them. This portfolio brings together some of the
+            projects I've worked on so far, along with a bit about how I got into IT and where I'm headed next.
+          </p>
+          <ul class="tag-list" aria-label="Areas of interest">
+            <li>Networking</li>
+            <li>Cybersecurity</li>
+            <li>Java Development</li>
+            <li>Database Design</li>
+          </ul>
+          <div class="btn-row">
+            <a class="btn" href="projects.html">View my projects</a>
+            <a class="btn" href="https://github.com/BlaineEngelbrecht" target="_blank" rel="noopener">Visit my GitHub profile</a>
+          </div>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <img src="assets/hero-network.svg" alt="" style="max-width:220px; margin: 0 auto 1.5rem;">
+          <div class="terminal">
+            <div class="terminal-bar">
+              <span></span><span></span><span></span>
+              <span class="terminal-title">profile.json</span>
+            </div>
+            <div class="terminal-body">
+              <div>{</div>
+              <div>&nbsp;&nbsp;<span class="c-prop">"name"</span>: <span class="c-str">"Blaine Engelbrecht"</span>,</div>
+              <div>&nbsp;&nbsp;<span class="c-prop">"role"</span>: <span class="c-str">"IT Student"</span>,</div>
+              <div>&nbsp;&nbsp;<span class="c-prop">"focus"</span>: [<span class="c-str">"networking"</span>, <span class="c-str">"security"</span>],</div>
+              <div>&nbsp;&nbsp;<span class="c-prop">"status"</span>: <span class="c-key">true</span><span class="terminal-cursor"></span></div>
+              <div>}</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="block">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Professional profiles</span>
+          <h2>Find me elsewhere online</h2>
+        </div>
+        <p>
+          The best places to see my ongoing work and professional background are my GitHub, where I publish
+          my coding projects, and my LinkedIn profile, where I share my professional and academic background.
+        </p>
+        <div class="btn-row">
+          <a class="btn" href="https://github.com/BlaineEngelbrecht" target="_blank" rel="noopener">GitHub: BlaineEngelbrecht</a>
+          <a class="btn" href="https://www.linkedin.com/in/blaine-engelbrecht-249519370" target="_blank" rel="noopener">LinkedIn profile</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Blaine Jordan Engelbrecht. Built for ITPP5112, Practical Assignment 1.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

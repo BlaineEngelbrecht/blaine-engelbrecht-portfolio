@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Blaine Engelbrecht</title>
+  <meta name="description" content="Java and database projects by Blaine Engelbrecht, including a Hospital Patient Admission System and an entity-relationship database design.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-mark">Blaine<span>.</span>Engelbrecht</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html" aria-current="page">Projects</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="block" style="border-top:none; padding-top:3.5rem;">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">My work</span>
+          <h1>Projects</h1>
+          <p class="lede">A couple of pieces of coursework that show a different side of my technical skills — one focused on programming logic, the other on data modelling.</p>
+        </div>
+
+        <div class="project">
+          <div class="project-media">
+            <img src="assets/console-placeholder.svg" alt="Placeholder graphic, replace with a screenshot of the Hospital Patient Admission System console application">
+          </div>
+          <div>
+            <h2>Hospital Patient Admission System</h2>
+            <p>
+              A console-based patient admission and bed management system built in Java as a multi-class
+              application. It uses a class hierarchy with enums to model patient types, an ArrayList to
+              manage admission records, and a 2D array to track bed availability across wards. The system
+              includes JUnit 5 tests to verify core logic and was built as a Maven project in NetBeans.
+            </p>
+            <p class="project-meta">Technologies: Java · JUnit 5 · Maven · NetBeans</p>
+            <a href="https://github.com/EMKNDN/emkndn-prog6112-2026-prog6112-practical-assignment-blaineengelbrecht" target="_blank" rel="noopener">
+              View the Hospital Patient Admission System repository on GitHub
+            </a>
+          </div>
+        </div>
+
+        <div class="project">
+          <div class="project-media screenshot">
+            <img src="assets/erd.png" alt="Entity-relationship diagram showing Artisan, Skincare_Product, Category, and Packaging_Option entities linked through a Product_Packaging junction table">
+          </div>
+          <div>
+            <h2>Database Design &amp; ERD Modelling</h2>
+            <p>
+              A database design project modelling an artisan skincare marketplace. The diagram maps five
+              entities — Artisan, Skincare_Product, Category, and Packaging_Option — with a
+              Product_Packaging junction table used to resolve the many-to-many relationship between
+              products and their packaging options. The wider assignment also involved evaluating
+              relational versus NoSQL approaches for structuring this kind of data.
+            </p>
+            <p class="project-meta">Technologies: Entity-relationship modelling · Relational database design</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Blaine Jordan Engelbrecht. Built for ITPP5112, Practical Assignment 1.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

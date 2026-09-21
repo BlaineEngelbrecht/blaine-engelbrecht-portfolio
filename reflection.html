@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Reflection — Blaine Engelbrecht</title>
+  <meta name="description" content="Blaine Engelbrecht's reflection on the ITPP5112 module, his strongest IT skills, and his plans for professional development.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-mark">Blaine<span>.</span>Engelbrecht</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="reflection.html" aria-current="page">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="block" style="border-top:none; padding-top:3.5rem;">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Reflection</span>
+          <h1>Professional reflection</h1>
+        </div>
+
+        <p class="lede" style="max-width:68ch;">
+          This module gave me my first real experience of building something end-to-end and putting it
+          out into the world for other people to see, rather than just submitting an assignment to be
+          marked. Deciding on structure, writing content that represents me honestly, and thinking about
+          how a stranger — like a potential employer — would read the site all pushed me to think
+          differently about my work than I usually do for coursework.
+        </p>
+
+        <p class="lede" style="max-width:68ch;">
+          Working on this portfolio also made me reflect on the range of skills I've picked up across my
+          modules so far. Between the Java programming, database and ERD design, and networking theory,
+          I've started to see how these areas connect rather than existing as separate subjects. Building
+          the site itself was also a small technical exercise in its own right, since I coded it directly
+          in HTML, CSS, and JavaScript rather than using a drag-and-drop builder.
+        </p>
+
+        <div class="reflection-item">
+          <span class="q-num">01</span>
+          <h3>My strongest IT professional skill</h3>
+          <p>
+            Programming logic — breaking a problem down into classes, structures, and steps, which came
+            through clearly in the Hospital Patient Admission System project. I'm comfortable working
+            through a problem methodically even when the language or tools are new to me.
+          </p>
+        </div>
+
+        <div class="reflection-item">
+          <span class="q-num">02</span>
+          <h3>The skill I'd most like to improve</h3>
+          <p>
+            Professional communication — explaining technical work clearly to people who aren't
+            necessarily technical themselves. Writing the About Me and project descriptions for this
+            portfolio actually highlighted this gap, since summarising a project in a few sentences for
+            a general audience is a different skill from writing code comments or a technical report
+            for a lecturer.
+          </p>
+        </div>
+
+        <div class="reflection-item">
+          <span class="q-num">03</span>
+          <h3>How I plan to develop that skill</h3>
+          <p>
+            By practising plain-language summaries of my projects as I build them, rather than only
+            writing documentation aimed at other developers. I'd also like to get more comfortable
+            presenting my work verbally, since that's another form of the same skill.
+          </p>
+        </div>
+
+        <div class="reflection-item">
+          <span class="q-num">04</span>
+          <h3>How this portfolio supports my future studies and career</h3>
+          <p>
+            As I take on more projects during my studies, I can keep adding to it, which means I'll
+            arrive at internship or job applications with a live, evolving body of work rather than
+            having to build something from scratch at the last minute. It also gives me a professional
+            presence I can point people toward, which matters given my goal of eventually running my
+            own business in cybersecurity or network engineering.
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Blaine Jordan Engelbrecht. Built for ITPP5112, Practical Assignment 1.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

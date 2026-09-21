@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — Blaine Engelbrecht</title>
+  <meta name="description" content="Get in touch with Blaine Engelbrecht, an aspiring IT professional, via email, GitHub, or LinkedIn.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-mark">Blaine<span>.</span>Engelbrecht</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="block" style="border-top:none; padding-top:3.5rem;">
+      <div class="container">
+        <div class="section-head">
+          <span class="kicker">Get in touch</span>
+          <h1>Contact</h1>
+          <p class="lede">If you'd like to connect, reach out through any of the methods below.</p>
+        </div>
+
+        <ul class="contact-list">
+          <li>
+            <span class="label">Email</span>
+            <a href="mailto:engelbrechtblaine@gmail.com">engelbrechtblaine@gmail.com</a>
+          </li>
+          <li>
+            <span class="label">GitHub</span>
+            <a href="https://github.com/BlaineEngelbrecht" target="_blank" rel="noopener">github.com/BlaineEngelbrecht</a>
+          </li>
+          <li>
+            <span class="label">LinkedIn</span>
+            <a href="https://www.linkedin.com/in/blaine-engelbrecht-249519370" target="_blank" rel="noopener">Blaine Engelbrecht on LinkedIn</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Blaine Jordan Engelbrecht. Built for ITPP5112, Practical Assignment 1.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>

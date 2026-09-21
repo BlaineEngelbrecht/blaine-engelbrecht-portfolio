@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About Me — Blaine Engelbrecht</title>
+  <meta name="description" content="Why Blaine Engelbrecht chose Information Technology, his career goals in cybersecurity and network engineering, and the skills he is currently developing.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html" class="nav-mark">Blaine<span>.</span>Engelbrecht</a>
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false" id="navToggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html" aria-current="page">About Me</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="reflection.html">Reflection</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="block" style="border-top:none; padding-top:3.5rem;">
+      <div class="container about-body">
+        <div class="section-head">
+          <span class="kicker">About me</span>
+          <h1>Why I chose IT, and where I'm headed</h1>
+        </div>
+
+        <p>
+          I got into Information Technology because I've always liked understanding how things work under
+          the hood — whether that's an application, a database, or the network carrying data between them.
+          IT felt like the field where that curiosity could actually turn into a career, and one where
+          there's always something new to learn.
+        </p>
+
+        <p>
+          My career goal is to eventually run my own business in cybersecurity or network engineering.
+          I like the idea of building something of my own rather than just working within someone else's
+          system, though I know that takes time and experience to get right. If that path doesn't work out
+          the way I'm hoping, I'd be glad to build a career as a network engineer instead — it's a field I
+          genuinely enjoy, not just a fallback.
+        </p>
+
+        <p>
+          Within IT, I'm most drawn to networking and security — the infrastructure side of things that
+          most people never see but that everything else depends on. I'm also developing my technical
+          writing, since being able to explain a system clearly is just as important as building it.
+        </p>
+
+        <div class="section-head" style="margin-top:2.5rem;">
+          <span class="kicker">Currently developing</span>
+          <h2>Skills I'm building right now</h2>
+        </div>
+
+        <div class="skill-rows">
+          <div class="skill-row">
+            <span class="skill-name">Java programming</span>
+            <p>Object-oriented design, class hierarchies, and building console applications with real logic behind them.</p>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Database &amp; ERD design</span>
+            <p>Modelling entities and relationships, including junction tables, and evaluating relational versus NoSQL approaches.</p>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Networking concepts</span>
+            <p>Packet switching, routing, the transport layer, and how data actually travels across a network.</p>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Technical writing</span>
+            <p>Explaining systems and projects clearly to both technical and non-technical audiences.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2026 Blaine Jordan Engelbrecht. Built for ITPP5112, Practical Assignment 1.</p>
+    </div>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('navToggle');
+    const links = document.getElementById('navLinks');
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      toggle.setAttribute('aria-expanded', open);
+    });
+  </script>
+</body>
+</html>
