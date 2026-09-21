@@ -1,0 +1,13 @@
+<svg viewBox="0 0 480 300" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder graphic, replace with a screenshot of the console application">
+  <rect width="480" height="300" fill="#16232E"/>
+  <rect x="40" y="40" width="400" height="220" rx="6" fill="#0E1A24" stroke="#23343F" stroke-width="1.4"/>
+  <circle cx="62" cy="60" r="5" fill="#E2A15C"/>
+  <circle cx="80" cy="60" r="5" fill="#3FC7B0"/>
+  <circle cx="98" cy="60" r="5" fill="#8CA2B0"/>
+  <g font-family="IBM Plex Sans, sans-serif" font-size="13" fill="#3FC7B0">
+    <text x="60" y="100">&gt; Admit patient... OK</text>
+    <text x="60" y="124">&gt; Assign bed: Ward B, Bed 4</text>
+    <text x="60" y="148">&gt; Running JUnit tests: 12 passed</text>
+  </g>
+  <text x="240" y="285" fill="#8CA2B0" font-family="IBM Plex Sans, sans-serif" font-size="12" text-anchor="middle">Replace this with a screenshot of your application</text>
+</svg>
